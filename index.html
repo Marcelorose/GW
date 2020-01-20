@@ -8,6 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
@@ -15,48 +24,66 @@
 <body>
     <div id="home">
         <div class="purple-bg">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="container navbar navbar-expand-lg pt-4">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="col-md-6 offset-md-4">
-                        <ul class="navbar-nav d-flex justify-content-end navbar-styled">
-                            <li class="nav-item ml-3">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item ml-3">
-                                <a class="nav-link" 3 href="#">Clientes</a>
-                            </li>
-                            <li class="nav-item ml-3">
-                                <a class="nav-link" href="#">Cases</a>
-                            </li>
-                            <li class="nav-item ml-3">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item ml-3">
-                                <a class="nav-link" href="#">Contato</a>
-                            </li>
-                            <li class="nav-item ml-4">
-                                <button type="button" class="btn btn-light" id="btn-entrar">ENTRAR</button>
-                            </li>
-                        </ul>
+                <div class="row" style="width: 100%;">
+                    <div class="col-md-6">
+                        <img id="gw-logo" src="images/GW_LOGO_BRANCO.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav d-flex justify-content-end navbar-styled">
+                                <li class="nav-item ml-3">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item ml-3">
+                                    <a class="nav-link" 3 href="#">Clientes</a>
+                                </li>
+                                <li class="nav-item ml-3">
+                                    <a class="nav-link" href="#">Cases</a>
+                                </li>
+                                <li class="nav-item ml-3 dropdown pointer">
+                                    <a class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <div class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item mb-2 mt-2" href="#">Últimas do Blog</a>
+                                        <a class="dropdown-item mb-2" href="#">Tecnologia</a>
+                                        <a class="dropdown-item mb-2" href="#">Design</a>
+                                        <a class="dropdown-item mb-2" href="#">Desenvolvimento</a>
+                                        <a class="dropdown-item mb-2" href="#">Softwares</a>
+                                        <a class="dropdown-item mb-2" href="#">Ver todas</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item ml-3">
+                                    <a class="nav-link" href="#">Contato</a>
+                                </li>
+                                <li class="nav-item ml-4">
+                                    <button type="button" class="btn btn-light" id="btn-entrar">ENTRAR</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
             <div class="container pt-5" id="pasqualotto-block">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 center">
                         <div>
-                            <h2 class="pasqualotto">App corretora </h2>
-                            <h2 class="pasqualotto">Pasqualotto&ampGT</h2>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
-                            <p>ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Duis auteirure dolor in reprehenderit in valuptate velit.</p>
-                        </div>
-                        <div>
-                            <button type="button" class="btn btn-light" id="btn-ver-projeto">VER PROJETO</button>
+                            <div>
+                                <h2 class="pasqualotto">App corretora </h2>
+                                <h2 class="pasqualotto">Pasqualotto&ampGT</h2>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                <p>ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Duis auteirure dolor in reprehenderit in valuptate velit.</p>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-light" id="btn-ver-projeto">VER PROJETO</button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -67,19 +94,21 @@
         </div>
         <div class="container pt-5" id="wine-day-block">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 center">
                     <div>
-                        <h2 class="wine-day">App Wine Day</h2>
-                        <h2 class="wine-day">Resort Edition 2020</h2>
-                        <p>Desmistificar o mundo dos vinhos, surpreender os paladares
-                            mais aguçados e conquistar os menos experientes. É com
-                            essa proposta que a Decanter Balneário Camboriú promove
-                            a sexta edição do Decanter Wine Day, evento que já se
-                            consagrou no mundo do vinho e que atrai apreciadores da bebida de todo o Brasil.
-                        </p>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-light" id="btn-ver-projeto">VER PROJETO</button>
+                        <div>
+                            <h2 class="wine-day">App Wine Day</h2>
+                            <h2 class="wine-day">Resort Edition 2020</h2>
+                            <p class="mt-4">Desmistificar o mundo dos vinhos, surpreender os paladares
+                                mais aguçados e conquistar os menos experientes. É com
+                                essa proposta que a Decanter Balneário Camboriú promove
+                                a sexta edição do Decanter Wine Day, evento que já se
+                                consagrou no mundo do vinho e que atrai apreciadores da bebida de todo o Brasil.
+                            </p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-light" id="btn-ver-projeto">VER PROJETO</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -87,21 +116,22 @@
                 </div>
             </div>
         </div>
-        <div class="gray-bg teste">
+        <div class="gray-bg">
             <div class="container pt-5" id="gw-block">
                 <div class="container">
                     <h3 class="text-center font-weight-bold">Nós temos todas as soluções que precisa!</h3>
-                    <p class="text-center m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                    <p class="text-center m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </p>
                     <p class="text-center">tempor incididunt ut labore et dolore</p>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-12">
                         <img id="app-mockup-gw" src="images/mockup1.png" alt="">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-lg-8 col-md-12">
                         <div class="row gw-features mt-5">
                             <div class="col">
-                                <div class="card pr-5 gray-bg">
+                                <div class="card pr-5 gray-bg col-md-12">
                                     <div class="div-icon">
                                         <i class="fas fa-chart-line"></i>
                                     </div>
@@ -113,7 +143,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card pr-5 gray-bg">
+                                <div class="card pr-5 gray-bg col-md-12">
                                     <div class="div-icon-custom">
                                         <i class="fas fa-edit"></i>
                                     </div>
@@ -127,7 +157,7 @@
                         </div>
                         <div class="row gw-features mt-5">
                             <div class="col">
-                                <div class="card pr-5 gray-bg">
+                                <div class="card pr-5 gray-bg col-md-12">
                                     <div class="div-icon">
                                         <i class="fas fa-key"></i>
                                     </div>
@@ -139,7 +169,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card pr-5 gray-bg">
+                                <div class="card pr-5 gray-bg col-md-12">
                                     <div class="div-icon">
                                         <i class="fas fa-desktop"></i>
                                     </div>
@@ -155,83 +185,91 @@
                 </div>
             </div>
         </div>
-        <div class="container pt-5" id="duvidas-block">
+        <div class="container pt-5 pb-5 mt-5" id="duvidas-block">
             <div class="container">
                 <h3 class="text-center font-weight-bold">Ainda com dúvidas sobre nossos serviços?</h3>
                 <p class="text-center m-0">Cumque adipisci anim quique provident posuere blandit accumsan</p>
                 <p class="text-center">delectus quam quos interdum sociosqu.</p>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 center">
                     <div class="accordion" id="accordionExample">
-                        <div class="card">
+                        <div class="card card-duvida mb-4" id="card-duvida-um">
                             <div class="card-header" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Collapsible Group Item #1
+                                <h5 class="mb-0">
+                                    <i class="far fa-paper-plane"></i>
+                                    <button class="btn btn-link" id="button-duvida-um" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Dúvida Um?
                                     </button>
-                                </h2>
+                                </h5>
                             </div>
-
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                    accusamus labore sustainable VHS.
+                                    Non sit hymenaeos error laoreet mollit architecto notaque aenean et, cum nemo,
+                                    nesciunt animi laoreet phasellus ea laboriosam aenean nihil fringilla reprehenderit
+                                    similique
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card card-duvida mb-4">
                             <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
+                                <h5 class="mb-0">
+                                    <i class="far fa-life-ring"></i>
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Collapsible Group Item #2
+                                        Dúvida Dois?
                                     </button>
-                                </h2>
+                                </h5>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                    accusamus labore sustainable VHS.
+                                    Non sit hymenaeos error laoreet mollit architecto notaque aenean et, cum nemo,
+                                    nesciunt animi laoreet phasellus ea laboriosam aenean nihil fringilla reprehenderit
+                                    similique
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card card-duvida mb-4">
                             <div class="card-header" id="headingThree">
-                                <h2 class="mb-0">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-mug-hot"></i>
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                         data-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        Collapsible Group Item #3
+                                        Dúvida Três?
                                     </button>
-                                </h2>
+                                </h5>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                    accusamus labore sustainable VHS.
+                                    Non sit hymenaeos error laoreet mollit architecto notaque aenean et, cum nemo,
+                                    nesciunt animi laoreet phasellus ea laboriosam aenean nihil fringilla reprehenderit
+                                    similique
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-duvida mb-4">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-layer-group"></i>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Dúvida Quatro?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Non sit hymenaeos error laoreet mollit architecto notaque aenean et, cum nemo,
+                                    nesciunt animi laoreet phasellus ea laboriosam aenean nihil fringilla reprehenderit
+                                    similique
                                 </div>
                             </div>
                         </div>
@@ -244,44 +282,47 @@
         </div>
     </div>
     <footer class="gray-bg">
-        <div class="container">
-            <div class="row">
+        <div class="container mt-5">
+            <div class="row footer-row">
                 <div class="col">
-                    <h5>GrupoW</h5>
+                    <img class="mb-4" id="gw-logo" src="images/GW_LOGO_PRETO.png" alt="">
                     <p>Desenvolvimento de softwares para internet e soluções
                         de qualidade para sua empresa
                     </p>
+                    <div class="mt-5 text-center">
+                        <i class="fas fa-desktop" style="font-size: 75px;"></i>
+                    </div>
                 </div>
                 <div class="col">
-                    <h5>Menu</h5>   
-                    <p>Home</p>                        
-                
+                    <h5 class="mb-5">Menu</h5>
+                    <p>Home</p>
+
                     <p>Clientes</p>
-                        
+
                     <p>Cases</p>
-                        
+
                     <p>Blog</p>
-            
+
                     <p>Contato</p>
-                
+
                 </div>
                 <div class="col">
-                    <h5>Soluções W</h5>     
-                    <p>Web Design Responsivo</p>                        
-                
+                    <h5 class="mb-5">Soluções W</h5>
+                    <p>Web Design Responsivo</p>
+
                     <p>Suporte para softwares</p>
-                
+
                     <p>Desenvolvimento</p>
-                
+
                     <p>Segurança na web</p>
-                
+
                     <p>Software/Plataforma Web</p>
-                
+
                     <p>Ver todas soluções</p>
                 </div>
                 <div class="col">
-                    <h5>Siga o W nas redes sociais</h5>
-                    <div class="footer-icons pt-2 pb-2 d-inline-flex">
+                    <h5 class="mb-4">Siga o W nas redes sociais</h5>
+                    <div class="footer-icons pt-2 pb-2 d-inline-flex mb-4">
                         <div class="facebook-icon">
                             <i class="fab fa-facebook-f"></i>
                         </div>
@@ -289,9 +330,20 @@
                             <i class="fab fa-instagram"></i>
                         </div>
                     </div>
-                    <p><b>Email: </b>atendimento@grupow.com.br</p>
+                    <p><b>Email: </b><span class="text-purple">atendimento@grupow.com.br</span></p>
                     <p><b>Telefone: </b> 47 3056.7670</p>
                     <p>11 3090.9202</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <p>Todos os direitos reservados - <span class="text-purple">GrupoW Softwares para Internet</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="float-right">Termos de uso &nbsp;&nbsp;|&nbsp;&nbsp; Privacidade</p>
                 </div>
             </div>
         </div>

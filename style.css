@@ -2,6 +2,14 @@ html, body{
     font-family: 'Poppins', sans-serif !important;
 }
 
+@media (max-width: 992px) {
+    #app-mockup-gw{display: none;}
+  }
+
+#gw-logo{
+    max-height: 50px;
+}
+
 .purple-bg{
     background-image: linear-gradient(to right, #7030F3 , #B38BFF);
 }
@@ -10,8 +18,27 @@ html, body{
     background-color: #F8F8F8;
 }
 
+.center{
+    display: flex;
+    align-items: center;
+}
+
 .navbar-styled{
     align-items: flex-end !important;
+}
+
+nav .collapse .show{
+    background-color: transparent;
+}
+
+.dropdown-custom{
+    background-color: white !important;
+    position: absolute;
+    left: -63px;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 .navbar-styled .nav-link{
@@ -19,10 +46,11 @@ html, body{
     font-size: 14px;
 }
 
-.text-purple{
+.text-purple, .accordion i, nav .dropdown a:hover{
     color: #7232F3;
 
 }
+
 
 #btn-entrar{
     color: #7232F3;
@@ -59,7 +87,7 @@ html, body{
     color: black;
 }
 
-#wine-day-block p, #gw-block p, footer p{
+#wine-day-block p, #gw-block p, footer p, .card-duvida button, nav .dropdown a{
     color: #9595A3;
 }
 
@@ -67,7 +95,7 @@ html, body{
     margin-bottom: 0.3rem;
 }
 
-#pasqualotto-block p:first-of-type, #wine-day-block p:first-of-type{
+#pasqualotto-block p:first-of-type{
     margin-top: 1rem;
 }
 
@@ -125,11 +153,51 @@ html, body{
     padding-top: 2rem;
 }
 
+#duvidas-block .accordion{
+    width: 100%;
+}
+
+.collapse .show{
+    background-color: black;
+}
+
+#duvidas-block .card-header{
+    border-bottom: 0;
+}
+
+#card-duvida-um, #headingOne{
+    color: white;
+    background-image: linear-gradient(to right, #7030F3, #B38BFF) !important;
+}
+
+#card-duvida-um i, #button-duvida-um{
+    color: white;
+}
+
+.card-duvida{
+    border: 0;
+    box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.2);
+}
+
+.card-duvida .card-header{
+    background-color: white;
+}
+
 footer{
     color: black;
 }
 
+.footer-row{
+    padding-top: 6rem!important;
+}
+
+footer h5{
+    font-weight: bold;
+}
+
 .facebook-icon{
+    margin-right: 13px;
+    position: relative;
     color: #838EAB;
     background-color: #E7EDF7;
     width: 40px;
@@ -138,9 +206,22 @@ footer{
 }
 
 .instagram-icon{
+    position: relative;
     color: white;
     background-color: #6B28F2;
     width: 40px;
     border-radius: 100%;
     height: 40px;
+}
+
+.facebook-icon i, .instagram-icon i{
+    position: absolute;
+    top: 31%;
+    left: 36%;
+}
+
+.instagram-icon i{
+    font-size: 18px;
+    top: 29%;
+    left: 30%;
 }
